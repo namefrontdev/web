@@ -1,0 +1,40 @@
+#slider-area {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#slider-area .owl-item div {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 45vh;
+  width: 100%;
+}
+.owl-next {
+  float: right;
+}
+.owl-next,
+.owl-prev {
+  /* background-color: #fff!important; */
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 6rem!important;
+  padding: 1rem;
+  color: rgba(0, 0, 0, .3);
+  transition: 200ms ease-in-out;
+
+}
+.owl-prev:hover span,
+.owl-next:hover span {
+  color: rgba(0, 0, 0, 1);
+}
