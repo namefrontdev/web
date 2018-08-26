@@ -5,19 +5,62 @@
 html {
     color : #818892;
 }
+/* ======================= */
 /* section */
+/* ======================= */
 #header_main {
     position: relative;
     z-index: 10;
 }
 #intro {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem 3rem;
 }
 .line {
     /* expaneded from slide */
     margin-top: 100vh;
 }
+/* ======================= */
+/* Highlight */
+/* ======================= */
+.highlight {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 30vh);
+}
+
+.highlight .hl-image {
+    width: 50%;
+    order: 2;
+    display: block;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: 75% center;
+    background-repeat: no-repeat;
+    padding: 20%;
+}
+.highlight .hl-content {
+    padding: 6rem;
+    transition: background 0.2s ease-in-out;
+    order: 1;
+    width: 50%;
+    display: block;
+    /* background: #ffffff; */
+    text-align: right;
+    position: relative;
+}
+.highlight.rev {
+    flex-direction: row-reverse;
+}
+.highlight.rev .hl-content{
+    order: 1;
+    text-align: left;
+}
+
+
 
 
 /* color */
@@ -25,7 +68,8 @@ html {
     color: var(--main-color);
 }
 .primary-42C-bg-color {
-    background-color: var(--main-color);
+    background-color: var(--main-color)!important;
+    border-color: var(--main-color)!important; 
 }
 
 
@@ -87,15 +131,16 @@ html {
 .room-content [role="price"] {
     font-size: var(--small);
 }
-.room-content [role="price"]::before,
-.room-content [role="price-discount"]:before {
-    content: '฿';
-}
 .room-content [role="price-discount"] {
     color: #9e9e9e;
     font-size: 0.8rem;
     text-decoration: line-through;
 }
+.room-content [role="price"]::before,
+.room-content [role="price-discount"]:before {
+    content: '฿';
+}
+
 
 
 /* ====================== */
