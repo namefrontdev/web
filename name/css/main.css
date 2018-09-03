@@ -5,6 +5,8 @@
 html {
     color : #818892;
 }
+
+
 /* ======================= */
 /* section */
 /* ======================= */
@@ -15,10 +17,26 @@ html {
 #intro {
     padding: 2.5rem 3rem;
 }
+@media screen and (max-width: 680px) {
+    #intro {
+        padding: 0;
+    }
+}
+.warper {
+    overflow: hidden;
+    width: 100vw;
+}
 .line {
     /* expaneded from slide */
     margin-top: 100vh;
 }
+@media screen and (max-width: 680px) {
+    .line {
+        margin-top: 0;
+    }
+}
+
+
 /* ======================= */
 /* Highlight */
 /* ======================= */
@@ -27,6 +45,11 @@ html {
     display: flex;
     align-items: stretch;
     min-height: calc(100vh - 30vh);
+}
+@media screen and (max-width: 680px) {
+    .highlight {
+        flex-direction: column-reverse !important;
+    }
 }
 
 .highlight .hl-image {
@@ -42,6 +65,27 @@ html {
     background-repeat: no-repeat;
     padding: 20%;
 }
+@media screen and (max-width: 768px) {
+    .highlight .hl-image {
+        background-position: 50% center;
+    }
+}
+@media screen and (max-width: 680px) {
+    .highlight .hl-image {
+        background: none !important;
+        width: 100%;
+        padding: 0;
+    }
+}
+.hl-image > img {
+    display: none;
+}
+@media screen and (max-width: 680px) {
+    .hl-image > img {
+        display: block;
+        width: 100%;
+    } 
+}
 .highlight .hl-content {
     padding: 6rem;
     transition: background 0.2s ease-in-out;
@@ -52,12 +96,29 @@ html {
     text-align: right;
     position: relative;
 }
+@media screen and (max-width: 768px) {
+    .highlight .hl-content {
+        padding: 3rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .highlight .hl-content {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
 .highlight.rev {
     flex-direction: row-reverse;
 }
 .highlight.rev .hl-content{
     order: 1;
     text-align: left;
+}
+
+.hl-image + .hl-content {
+    margin: 2rem auto;
 }
 
 
@@ -79,7 +140,11 @@ html {
 .row.expanded {
     margin: 6rem auto;
 }
-
+@media screen and (max-width: 680px) {
+    .row.expanded {
+        margin: 2rem auto;
+    }
+}
 /* hr */
 .header {
     overflow: hidden;
@@ -98,6 +163,11 @@ html {
 }
 .room:hover {
     box-shadow: 0 20px 20px -10px rgba(0,0,0,.3);
+}
+@media screen and (max-width: 768px) {
+    .room:hover {
+        box-shadow: none;
+    }
 }
 .room-link {
     color: initial;
@@ -156,4 +226,7 @@ html {
     background-color: initial;
     padding-left: 0;
     padding-right: 0;
+}
+.footer .item {
+    padding: 2rem;
 }
