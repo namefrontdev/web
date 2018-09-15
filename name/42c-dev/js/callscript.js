@@ -109,5 +109,10 @@ $(function(){
     //#3
     $(".js-smartPhoto").SmartPhoto();
 
+    //#4
+    $('a').smoothScroll({
+        speed: 1000
+    });
+
 
 });
