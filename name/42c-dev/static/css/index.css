@@ -1,0 +1,73 @@
+/* 
+*
+*   Navbar Customize
+*   
+*/
+
+/* 
+    Customize Class navbar-light to
+    Class navbar-light-edit 
+*/
+
+/* before:scrolling */
+.navbar-light-edit .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-light-edit .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-light-edit .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+/* after:scrolling */
+.bg-light-show .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+.bg-light-show.bg-out .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+
+/* 
+    Animation navbar background 
+*/
+.bg-light-show {
+    transition: all 200ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.675);
+    /* border-bottom: 1px solid rgba(46, 45, 45, 0.3); */
+}
+.bg-out {
+    background-color: rgba(255, 255, 255, 0);
+    /* border-bottom: none; */
+
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 400ms ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+.img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+.img-overlay > .can-zoom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.img-overlay > .can-zoom > i {
+    transition: 400ms ease;
+    opacity: 0;
+}
+.img-overlay:hover > .can-zoom i {
+    opacity: 1;
+}

@@ -11,7 +11,7 @@
 
     // intro text
     $myObj->intro = '
-            <h4>WELCOME TO "test"
+            <h4>WELCOME TO
                 <span class="primary-42C-color">42C THE CHIC</span> THE CHIC HOTEL NAKHONSAWAN</h4>
             <p>
                 42C The Chic Hotel is new modern style hotel in Nakhon Sawan. The words 42C derived from 4 rivers from the north merged and
@@ -26,25 +26,25 @@
     // room
     $roomobj = (object)array();
     $roomobj->type = "room";
-    $roomobj->header = "ROOM-";
-    $roomobj->url = $i . "img/PI4_6489.jpg";
-    $roomobj->content = "-SSModern and beautiful designed room with fully furnished and facilities. Variuos room type suitable for family or single traveller .";
+    $roomobj->header = "ROOM";
+    $roomobj->url = $i . "img/PI4_5140.jpg";
+    $roomobj->content = "Modern and beautiful designed room with fully furnished and facilities. Variuos room type suitable for family or single traveller .";
     
     // returant
     $restobj = (object)array();
     $restobj->type = "restaurant";
-    $restobj->header = "RESTAURANT-";
+    $restobj->header = "RESTAURANT";
     $restobj->url = $i ."img/PI4_6473.jpg";
-    $restobj->content = "-Luxury european designed at the center of the town. Come visit to taste the premium selected food and beverage ..";
+    $restobj->content = "Luxury european designed at the center of the town. Come visit to taste the premium selected food and beverage ..";
 
     // conference
     $conobj = (object)array();
     $conobj->type = "conference";
-    $conobj->header = "CONFERENCE ROOM-";
-    $conobj->url = $i ."img/PI4_6489.jpg";
-    $conobj->content = "-Designed for on-demand event with great service provided. From medium to large conference room available with special offer for you .";
+    $conobj->header = "CONFERENCE ROOM";
+    $conobj->url = $i ."img/conference/u_room/PI4_4826.jpg";
+    $conobj->content = "Designed for on-demand event with great service provided. From medium to large conference room available with special offer for you .";
 
-
+    
 
     //
     $myObj->overview = [

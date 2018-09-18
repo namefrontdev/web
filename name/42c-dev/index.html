@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>42C The Chic Hotel | Home </title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/edit-owl.css">
-    <link rel="stylesheet" href="plugin/bootstrap4.1.3/css/bootstrap.css">
-    <link rel="stylesheet" href="plugin/owlcarousel2/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugin/SmartPhoto-master/css/smartphoto.min.css">
-    <script src="plugin/jquery3.3.1.min.js"></script>
-    <script src="plugin/bootstrap4.1.3/js/bootstrap.js"></script>
-    <script src="js/callscript.js"></script>
-    <script src="plugin/owlcarousel2/owl.carousel.min.js"></script>
-    <script src="plugin/SmartPhoto-master/js/jquery-smartphoto.min.js"></script>
-    <script src="plugin/jquery.smooth-scroll.js"></script>
-
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/edit-owl.css">
+    <link rel="stylesheet" href="./static/libs/bootstrap4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/libs/owlcarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="./static/libs/smartphoto/css/smartphoto.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/admin/assets/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,7 +20,7 @@
     <!-- header -->
 
     <header id="header_main">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light-edit fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <!-- <div id="logo-42C"></div> -->
@@ -82,9 +77,9 @@
         <div class="row">
             <div class="warper">
                 <div id="slider-area" class="owl-carousel">
-                    <!-- <div style="background-image: url(img/PI4_4944.jpg);"></div>
                     <div style="background-image: url(img/PI4_5140.jpg);"></div>
-                    <div style="background-image: url(img/PI4_6473.jpg);"></div> -->
+                    <div style="background-image: url(img/PI4_5140.jpg);"></div>
+                    <div style="background-image: url(img/PI4_6473.jpg);"></div>
                 </div>
             </div>
 
@@ -115,8 +110,8 @@
         <!-- preview 42C Hotel -->
         <div id="preview-42C">
             <article id="hl-1" class="highlight type-1">
-                <div id="overview_room_img" class="hl-image" style="background-image: url(img/PI4_4944.jpg);">
-                    <img src="img/PI4_494.jpg" class="img-fluid">
+                <div id="overview_room_img" class="hl-image" style="background-image: url(img/PI4_5140.jpg);">
+                    <img src="img/PI4_5140.jpg" class="img-fluid">
                 </div>
                 <div class="hl-content">
                     <header>
@@ -148,7 +143,7 @@
             </article>
             <article id="hl-2" class="highlight">
                 <div id="overview_con_img" class="hl-image" style="background-image: url(img/PI4_6489.jpg);">
-                    <img src="img/PI4_4944.jpg" class="img-fluid">
+                    <img src="img/PI4_5140.jpg" class="img-fluid">
                 </div>
                 <div class="hl-content">
                     <header>
@@ -332,7 +327,7 @@
                             <!-- !! store image preview !! -->
                             <div class="hidden store-junior-room">
                                 <a href="img/room/Junior/PI4_4942.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
-                                <a href="img/room/Junior/PI4_4944.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
+                                <a href="img/room/Junior/PI4_5140.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
                                 <a href="img/room/Junior/PI4_4930.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
                                 <a href="img/room/Junior/PI4_4936.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
                                 <a href="img/room/Junior/PI4_4952.jpg" class="js-smartPhoto" data-caption="junior" data-id="junior" data-group="JuniorRooms"></a>
@@ -530,9 +525,9 @@
                     <div class="col-md-3 item">
                         <h6>SERVICES</h6>
                         <ul class="list-group list-group-flush">
-                            <a class="list-group-item">Room</a>
-                            <a class="list-group-item">Conference Room</a>
-                            <a class="list-group-item">Restaurant</a>
+                            <a class="list-group-item" href="#room">Room</a>
+                            <a class="list-group-item" href="conference">Conference Room</a>
+                            <a class="list-group-item" href="restaurant">Restaurant</a>
                             <a class="list-group-item">Hotel</a>
                         </ul>
                     </div>
@@ -555,5 +550,12 @@
 
 
 </body>
+<script src="./static/libs/jquery3.3.1.min.js"></script>
+<script src="./static/libs/bootstrap4.1.3/js/bootstrap.min.js"></script>
+<script src="./static/js/callscript.js"></script>
+<script src="./static/libs/owlcarousel2/owl.carousel.min.js"></script>
+<script src="./static/libs/smartphoto/js/jquery-smartphoto.min.js"></script>
+<script src="./static/libs/jquery.smooth-scroll.js"></script>
+<script src="./static/js/index.js"></script>
 
 </html>

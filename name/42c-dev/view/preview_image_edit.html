@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../plugin/bootstrap4.1.3/css/bootstrap.css">
+    <script src="../plugin/jquery3.3.1.min.js"></script>
+    <script src="../plugin/bootstrap4.1.3/js/bootstrap.js"></script>
+
+</head>
+<style>
+    .image-list {
+        list-style-type: none;
+    }
+    .image-list li {
+        display: inline-block;
+    }
+
+    .image-list label {
+        transition: all 200ms ease-in;
+        border: 1px solid #dddddd;
+    }
+    .image-list label:hover {
+        border-color: #333;
+    }
+
+
+    label img {
+        height: 250px;
+        width: 250px;
+        transition: transform 100ms ease-out;
+        transform-origin: 50% 50%;
+    }
+    :checked + label img {
+        transform: scale(0.9);
+        box-shadow: 0 0 5px #333;
+        z-index: -1;
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid preview-image">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="image-list">
+                    <li>
+                        <input type="checkbox" name="" id="pv1">
+                        <label for="pv1"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="pv2">
+                        <label for="pv2"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="pv3">
+                        <label for="pv3"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="pv4">
+                        <label for="pv4"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="pv5">
+                        <label for="pv5"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="pv6">
+                        <label for="pv6"><img src="../img/250x250.png" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">s</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
