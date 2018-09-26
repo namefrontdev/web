@@ -34,23 +34,23 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto" id="navbar_42C">
-                        <li class="nav-item active">
+                        <!-- <li class="nav-item active">
                             <a class="nav-link btn btn-danger" id="hotdeal" href="#">Deals</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#room">Accommodation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="accommodation" href="#room">Accommodation</a>
+                            <a class="nav-link" href="#conference">Conference</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="conference" href="#">Conference</a>
+                            <a class="nav-link" href="#restaurant">Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="restaurant" href="#">Restaurant</a>
+                            <a class="nav-link" href="#">Contract us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contract" href="#">Contract us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="policy" href="#">Policy</a>
+                            <a class="nav-link" href="#">Policy</a>
                         </li>
                         <li class="nav-item dropdown sr-only">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -138,7 +138,7 @@
                     <p>
                         Luxury european designed at the center of the town. Come visit to taste the premium selected food and beverage ..</p>
                     <div>
-                        <a href="javascript:void(0);" class="btn btn-primary primary-42C-bg-color">Read More</a>
+                        <a href="#restaurant" class="btn btn-primary primary-42C-bg-color">Read More</a>
                     </div>
                 </div>
             </article>
@@ -155,7 +155,7 @@
                         Designed for on-demand event with great service provided. From medium to large conference room available with special offer
                         for you .</p>
                     <div>
-                        <a href="javascript:void(0);" class="btn btn-primary primary-42C-bg-color">Read More</a>
+                        <a href="#conference" class="btn btn-primary primary-42C-bg-color">Read More</a>
                     </div>
                 </div>
             </article>
@@ -163,6 +163,11 @@
         <!-- end preview 42C Hotel -->
     </div>
     <!-- end intro -->
+
+
+
+
+
     <!-- accommodation -->
     <div class="container">
         <div class="row expanded" id="room">
@@ -171,8 +176,8 @@
                 <h4>Room 42C The Chic Hotel</h4>
             </header>
 
-            <div class="col-md-6 col-lg-6">
-                <div class="room" role="junior">
+            <div class="col-md-12 col-lg-6">
+                <div class="room" role="deluxe">
                     <a class="room-link" href="javscript:void(0);">
                         <div class="thumbnail">
                             <img src="http://42chotel.com/images/Deluxe/img-01.jpg" class="img-fluid">
@@ -205,8 +210,10 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-6">
-                <div class="room" role="junior">
+            
+
+            <div class="col-md-12 col-lg-6">
+                <div class="room" role="special-deluxe">
                     <a class="room-link" href="javscript:void(0);">
                         <div class="thumbnail">
                             <img src="http://42chotel.com/images/Superior/img-01.jpg" class="img-fluid">
@@ -215,7 +222,7 @@
                         <div class="room-content">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <span class="room-type">Superior</span>
+                                    <span class="room-type">Special Deluxe</span>
                                 </div>
                                 <div class="col-sm-12">
                                     <span role="price" class="primary-42C-color">1,050</span>
@@ -239,8 +246,10 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-6">
-                <div class="room" role="junior">
+
+
+            <div class="col-md-12 col-lg-6">
+                <div class="room" role="grand">
                     <a class="room-link" href="javscript:void(0);">
                         <div class="thumbnail">
                             <img src="http://42chotel.com/images/04.jpg" class="img-fluid">
@@ -249,7 +258,7 @@
                         <div class="room-content">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <span class="room-type">Grand Suite</span>
+                                    <span class="room-type">Grand</span>
                                 </div>
                                 <div class="col-sm-12">
                                     <span role="price" class="primary-42C-color">5,500</span>
@@ -273,7 +282,9 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-6">
+
+
+            <div class="col-md-12 col-lg-6">
                 <div class="room" role="junior">
                     <a class="room-link" href="javscript:void(0);">
                         <div class="thumbnail">
@@ -306,11 +317,31 @@
                     </a>
                 </div>
             </div>
-
         </div>
         <!-- end accommodation -->
     </div>
 
+
+    <div class="container">
+        <div class="row expanded" id="conference">
+            <header class="header">
+                <h4>Conference Room</h4>
+            </header>
+        </div>
+    </div>
+    
+
+    
+    <div class="container">
+        <div class="row expanded" id="restaurant">
+            <header class="header">
+                <h4>Restaurant</h4>
+            </header>
+        </div>
+    </div>
+
+
+    <!-- !!! FOOTER !!! -->
     <div class="container-fluid primary-42C-bg-color extended-2">
         <div class="footer">
             <div class="container">
@@ -341,11 +372,7 @@
                     <div class="col-md-3 item">
                         <h6>CONTACT</h6>
                         <ul class="list-group list-group-flush">
-                            <a class="list-group-item">Cras justo odio</a>
-                            <a class="list-group-item">Dapibus ac facilisis in</a>
-                            <a class="list-group-item">Morbi leo risus</a>
-                            <a class="list-group-item">Porta ac consectetur ac</a>
-                            <a class="list-group-item">Vestibulum at eros</a>
+                            <a class="list-group-item">About us</a>                    
                         </ul>
                     </div>
                     <div class="col-md-2 item">

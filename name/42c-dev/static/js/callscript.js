@@ -59,7 +59,9 @@ $(function(){
                     1000:{
                         items:1
                     }
-                }
+                },
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
             });
             //
             $('#conference-container-img').owlCarousel({

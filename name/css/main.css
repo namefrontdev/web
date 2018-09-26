@@ -44,7 +44,7 @@ html {
     position: relative;
     display: flex;
     align-items: stretch;
-    min-height: calc(100vh - 30vh);
+    min-height: calc(100vh - 40vh);
 }
 @media screen and (max-width: 680px) {
     .highlight {
