@@ -1,0 +1,501 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sufee Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="../../static/admin/assets/css/normalize.css">
+    <link rel="stylesheet" href="../../static/admin/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/admin/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/admin/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../../static/admin/assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../static/admin/assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+
+    <link rel="stylesheet" href="../../static/admin/assets/scss/style.css">
+    <link rel="stylesheet" href="../../plugin/owlcarousel2/owl.carousel.min.css">
+    <link href="../../static/admin/assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+</head>
+<style>
+    #ss {
+  position: absolute;
+  /* height: 100vh; */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 680px) {
+  #ss {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+}
+#ss .owl-item div {
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+/* @media screen and (max-width: 680px) {
+  #ss .owl-item div {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+} */
+#ss .owl-nav {
+  position: absolute;
+  top: 45vh;
+  width: 100%;
+}
+/* @media screen and (max-width: 680px) {
+  #ss .owl-nav {
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+  }
+} */
+#ss .owl-next {
+  float: right;
+}
+
+#ss .owl-prev span,
+#ss .owl-next span {
+  font-size: 6rem!important;
+  padding: 1rem;
+  color: rgba(0, 0, 0, .3);
+  transition: 200ms ease-in-out;
+  outline: none;
+
+}
+#ss .owl-prev:hover span,
+#ss .owl-next:hover span {
+  color: rgba(0, 0, 0, 1);
+}
+@media screen and (min-width: 1200px) {
+    #edit-main-slide tr td:nth-child(2) {
+        max-width: 120px;
+    }
+}
+</style>
+
+<body>
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="../../static/admin/images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="../../static/admin/images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-laptop"></i>Components</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-edit"></i><a href="ui-buttons.html">Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">5</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Server #1 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Server #2 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Server #3 overloaded.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-email"></i>
+                                <span class="count bg-primary">9</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="../../static/admin/images/avatar/1.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="../../static/admin/images/avatar/2.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="../../static/admin/images/avatar/3.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-3" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="../../static/admin/images/avatar/4.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="../../static/admin/images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                        </div>
+                    </div>
+
+                    <div class="language-select dropdown" id="language-select">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="language" aria-haspopup="true"
+                            aria-expanded="true">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="language">
+                            <div class="dropdown-item">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-it"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">UI Elements</a></li>
+                            <li class="active">Page</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Main Slide</strong>
+                    </div>
+                    <div class="card-body">
+                        <table class="table text-center" id="edit-main-slide">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">ตัวอย่าง</th>
+                                    <th scope="col">แก้ไข</th>
+                                    <th scope="col">ลบ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <div class="form-actions form-group text-right">
+                            <button type="submit" class="btn btn-success btn-md">
+                                <i class="fa fa-floppy-o"></i> Save</button>
+                            <button class="btn btn-primary btn-md">
+                                <i class="fa fa-plus-square"></i> Add image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="warper" id='ttt'>
+                        <div id="ss" class="owl-carousel">
+                            <!-- <div style="background-image: url(../../img/PI4_5140.jpg);"></div>
+                            <div style="background-image: url(../../img/PI4_6473.jpg);"></div> -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div><!-- .content -->
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+
+
+
+    <script src="../../static/admin/assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="../../static/admin/assets/js/plugins.js"></script>
+    <script src="../../static/admin/assets/js/main.js"></script>
+
+    <script src="../../plugin/owlcarousel2/owl.carousel.min.js"></script>
+
+
+
+    <!-- <script src="../../static/admin/assets/js/lib/chart-js/Chart.bundle.js"></script> -->
+    <!-- <script src="../../static/admin/assets/js/dashboard.js"></script> -->
+    <!-- <script src="../../static/admin/assets/js/widgets.js"></script> -->
+    <!-- <script src="../../static/admin/assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <script src="../../static/admin/assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <script src="../../static/admin/assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="../../static/admin/assets/js/lib/vector-map/country/jquery.vmap.world.js"></script> -->
+    <script>
+        (function ($) {
+            $.ajax({
+                url: "/42c-dev/mainslide.php",
+                success: function (result) {
+                    var a = JSON.parse(result);
+                    console.log(result)
+                    var list = a.images;
+                    buildpreview(list);
+                    owlInit();
+                    console.log('ready')
+                    deleteImage();
+                }
+            });
+
+            function owlInit() {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    margin: 10,
+                    nav: true,
+                    smartSpeed: 1000,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                });
+            }
+            var arrImage = [];
+            function deleteImage() {
+                $('#edit-main-slide tr').on('click', function (e) {
+                    // console.log($(e.target))
+                    var arr = [];
+                    var arrImage_remove = [];
+                    var image_id = e.target.id;
+                    var idx = $(this).index();
+                    console.log('indexTR: '+idx);
+
+                    if ($(e.target).hasClass('btn-delete')) {
+                        if (confirm(''))
+                        // remove list image. 
+                        $(`#tr${image_id}`).remove();
+                        console.log(`imageId: ${image_id}`);
+
+                        // // remove owl item.
+                        $('.owl-carousel').trigger('refresh.owl.carousel');
+                        $(".owl-carousel").trigger('remove.owl.carousel', [idx]).trigger('refresh.owl.carousel');
+                    }
+                    // puch img to array list.
+                    $("#edit-main-slide tr img").each(function () {
+                        var url = $(this).attr('src');
+                        arr.push(url);
+                    });
+                    console.log(arr);
+                })
+            }
+            // $('#edit-main-slide').click( function (e) {
+            //     // console.log(this); // show element selected
+            //     // console.log($(e)); // show event attribute
+            //     // console.log(e.target);
+            //     // console.log($(this));
+            //     // console.log($(this).children().index());
+            //     // console.log($(this).children());
+
+            //     var arr = [];
+            //     var arrImage_remove = [];
+            //     // var image_id = e.target.id;
+
+            //     // if ($(e.target).hasClass('btn-delete')) {
+            //     //     var se = $(e.target);
+            //     //     console.log($('#edit-main-slide tr').index());
+
+            //     //     // arrImage.forEach(function (value, i) {
+            //     //     //     console.log('%d: %s', i, value);
+            //     //     //     // console.log(arrImage.indexOf(this))
+            //     //     //     console.log(e.target);
+            //     //     // });
+
+            //     //     // remove list image. 
+            //     //     // $(`#tr${image_id}`).remove();
+            //     //     // console.log(`imageId: ${image_id - 1}`);
+            //     //     // console.log(`imageId not -1: ${image_id}`);
+
+            //     //     // // remove owl item.
+            //     //     // $('.owl-carousel').trigger('refresh.owl.carousel');
+            //     //     // $(".owl-carousel").trigger('remove.owl.carousel', [image_id - 1]).trigger('refresh.owl.carousel');
+            //     // }
+            //     // puch img to array list.
+            //     $("#edit-main-slide tr img").each(function () {
+            //         var url = $(this).attr('src');
+            //         arr.push(url);
+            //     });
+            //     console.log(arr);
+
+            // });
+
+
+            function buildpreview(list) {
+                var tbody = $('#edit-main-slide tbody');
+                var divOwl = $("<div>", {
+                    id: 'ss',
+                    class: 'owl-carousel'
+                });
+                $('#ss').remove();
+                $('#ttt').append(divOwl);
+                tbody.empty();
+
+                list.forEach((e, i) => {
+                    arrImage.push(e);
+                    i += 1;
+                    var btn_edit =
+                        '<button type="submit" class="btn btn-primary btn-sm">' +
+                        '<i class="fa fa-dot-circle-o"></i> Edit' +
+                        '</button>';
+                    var btn_delete =
+                        `<button id='${i}' class="btn btn-danger btn-sm btn-delete">` +
+                        '<i class="fa fa-ban"></i> Delete' +
+                        '</button>';
+                    $('#ss').append("<div style='background-image:url(" + e + ");'/>");
+                    // console.log(e)
+
+
+                    var img = `<img id='no${i}' src='${e}' class="img-fluid">`;
+                    var tr = $('<tr>', { id: 'tr' + i, });
+                    var td =
+                        '<td class="align-middle">' + i + '</td>' +
+                        '<td class="align-middle">' + img + '</td>' +
+                        '<td class="align-middle">' + btn_edit + '</td>' +
+                        '<td class="align-middle">' + btn_delete + '</td>';
+                    tr.append(td);
+                    tbody.append(tr)
+                })
+                console.log(arrImage);
+            } // end buildpreview
+        })(jQuery);
+    </script>
+</body>
+
+</html>

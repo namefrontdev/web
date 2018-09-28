@@ -1,0 +1,198 @@
+html,body {
+    overflow-x: hidden;
+}
+#preview-42C,
+#room {
+    overflow: hidden;
+}
+/* =====================================================================
+*
+*   Highlight
+*   
+*/
+.highlight {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 50vh);
+}
+@media screen and (max-width: 680px) {
+    .highlight {
+        flex-direction: column-reverse !important;
+    }
+}
+
+.highlight .hl-image {
+    width: 50%;
+    order: 2;
+    display: block;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: 75% center;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+@media screen and (max-width: 768px) {
+    .highlight .hl-image {
+        background-position: 50% center;
+    }
+}
+@media screen and (max-width: 680px) {
+    .highlight .hl-image {
+        background: none !important;
+        width: 100%;
+        padding: 0;
+    }
+}
+.hl-image > img {
+    display: none;
+}
+@media screen and (max-width: 680px) {
+    .hl-image > img {
+        display: block;
+        width: 100%;
+    } 
+}
+.highlight .hl-content {
+    padding: 6rem;
+    transition: background 0.2s ease-in-out;
+    order: 1;
+    width: 50%;
+    display: block;
+    /* background: #ffffff; */
+    text-align: right;
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .highlight .hl-content {
+        padding: 3rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .highlight .hl-content {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.highlight.rev {
+    flex-direction: row-reverse;
+}
+
+.highlight.rev .hl-content{
+    order: 1;
+    text-align: left;
+}
+
+.hl-image + .hl-content {
+    margin: 2rem auto;
+}
+
+
+
+
+/* =====================================================================
+*
+*   Room
+*   
+*/
+.room {
+    border: 1px solid transparent;
+    /* padding room space */
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    transition: 200ms ease-in-out ;
+}
+.room:hover {
+    box-shadow: 0 20px 20px -10px rgba(0,0,0,.3);
+}
+@media screen and (max-width: 768px) {
+    .room:hover {
+        box-shadow: none;
+    }
+}
+.room-link {
+    color: initial;
+}
+.room-link:hover {
+    color: initial;
+    text-decoration: none;
+}
+.room-link:hover .room-content {
+    cursor: pointer;
+}
+.thumbnail {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.thumbnail label {
+    display: block;
+}
+.room-type {
+    font-size: var(--small);
+}
+.room-content [role="price"] {
+    font-size: var(--small);
+}
+.room-content [role="price-discount"] {
+    color: #9e9e9e;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+.room-content [role="price"]::before,
+.room-content [role="price-discount"]:before {
+    content: '฿';
+}
+
+
+/* =====================================================================
+*
+*   Animation navbar background 
+*
+*/
+.bg-light-show {
+    transition: all 200ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.675);
+}
+.bg-out {
+    background-color: rgba(255, 255, 255, 0);
+
+}
+/*
+*   Image overlay 
+* ====================
+*/
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 400ms ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+.img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+.img-overlay > .can-zoom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.img-overlay > .can-zoom > i {
+    transition: 400ms ease;
+    opacity: 0;
+}
+.img-overlay:hover > .can-zoom i {
+    opacity: 1;
+}

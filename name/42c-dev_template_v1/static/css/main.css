@@ -1,0 +1,160 @@
+:root {
+    --small:1.5rem;
+    --main-color:#fbb040;
+}
+html {
+    color : #818892;
+}
+
+/* ======================= */
+/* section */
+/* ======================= */
+#header_main {
+    position: relative;
+    z-index: 10;
+}
+/* fixed navbar custom tag */
+#room,
+#conference,
+#restaurant
+{
+    padding-top: 3rem;
+}
+
+
+#intro {
+    padding: 2.5rem 3rem;
+}
+@media screen and (max-width: 680px) {
+    #intro {
+        padding: 0;
+    }
+}
+.warper {
+    overflow: hidden;
+    width: 100vw;
+}
+.line {
+    /* expaneded from slide */
+    margin-top: 100vh;
+}
+@media screen and (max-width: 680px) {
+    .line {
+        margin-top: 0;
+    }
+}
+
+/* =====================================================================
+*
+*   Navbar Customize
+*   
+*/
+
+/* 
+    Customize Class navbar-light to
+    Class navbar-light-edit 
+*/
+
+/* before:scrolling */
+.navbar-light-edit .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-light-edit .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-light-edit .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+/* after:scrolling */
+.bg-light-show .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+.bg-light-show.bg-out .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+/* ============ mobi ============ */
+.navbar-light-edit .navbar-toggler-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)");
+     */
+     background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+
+/* color */
+.primary-42C-color {
+    color: var(--main-color);
+}
+.primary-42C-bg-color {
+    background-color: var(--main-color)!important;
+    border-color: var(--main-color)!important; 
+}
+
+
+/* =====================================================================
+/* EDIT BOOTSTRAP */
+/******************/
+.row.expanded {
+    margin: 6rem auto;
+}
+@media screen and (max-width: 680px) {
+    .row.expanded {
+        margin: 2rem auto;
+    }
+}
+/* hr */
+.header {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+
+
+/* =====================================================================
+/* spacing */
+.extended-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* =====================================================================
+*
+*   goTop button
+*
+**/
+#goTop {
+    position: fixed;
+    right: calc(var(--small) - 0.5vh);
+    bottom: calc(var(--small) - 0.5vh);
+    z-index: 999;
+}
+#goTop > a {
+    padding: 1rem;
+}
+
+/* =====================================================================
+*
+*   Footer
+*
+**/
+
+.footer .list-group-item {
+    background-color: initial;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer .item {
+    padding: 2rem;
+}
+
+/* =====================================================================
+*
+*   Light box
+*
+**/
+.smartphoto {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
