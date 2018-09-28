@@ -22,17 +22,19 @@
     <link rel="stylesheet" href="../../static/admin/assets/css/themify-icons.css">
     <link rel="stylesheet" href="../../static/admin/assets/css/flag-icon.min.css">
     <link rel="stylesheet" href="../../static/admin/assets/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="../../static/admin/assets/css/animate.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
 
     <link rel="stylesheet" href="../../static/admin/assets/scss/style.css">
-    <link rel="stylesheet" href="../../static/libs/owlcarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../plugin/owlcarousel2/owl.carousel.min.css">
     <link href="../../static/admin/assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
 </head>
 <style>
-#ss {
+    #ss {
   position: absolute;
   /* height: 100vh; */
   width: 100%;
@@ -63,14 +65,9 @@
   }
 } */
 #ss .owl-nav {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    pointer-events: none;
+  position: absolute;
+  top: 45vh;
+  width: 100%;
 }
 /* @media screen and (max-width: 680px) {
   #ss .owl-nav {
@@ -85,12 +82,11 @@
 
 #ss .owl-prev span,
 #ss .owl-next span {
-    font-size: 6rem!important;
-    padding: 1rem;
-    color: rgba(0, 0, 0, .3);
-    transition: 200ms ease-in-out;
-    outline: none;
-    pointer-events: initial!important;
+  font-size: 6rem!important;
+  padding: 1rem;
+  color: rgba(0, 0, 0, .3);
+  transition: 200ms ease-in-out;
+  outline: none;
 
 }
 #ss .owl-prev:hover span,
@@ -99,31 +95,8 @@
 }
 @media screen and (min-width: 1200px) {
     #edit-main-slide tr td:nth-child(2) {
-        max-width: 150px;
+        max-width: 120px;
     }
-}
-#ss .owl-dots {
-    margin-top: 10px;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-}
-#ss .owl-dots .owl-dot {
-    display: inline-block;
-    zoom: 1;
-}
-#ss .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    background: #D6D6D6;
-    display: block;
-    -webkit-backface-visibility: visible;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-}
-#ss .owl-dots .owl-dot.active span,
-#ss .owl-dots .owl-dot:hover span {
-    background: #869791;
 }
 </style>
 
@@ -146,19 +119,14 @@
                     <li class="active">
                         <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
-
-                    <!-- split  -->
-                    <h3 class="menu-title">Carousel</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Components</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-edit"></i><a href="image-main-slide.html">Main Slider</a></li>
+                            <li><i class="fa fa-edit"></i><a href="ui-buttons.html">Page</a></li>
                         </ul>
                     </li>
-                    <!-- split  -->
-                    
-
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -274,13 +242,16 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="language">
                             <div class="dropdown-item">
-                                <span class="flag-icon flag-icon-th"></span>
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
                             </div>
                             <div class="dropdown-item">
                                 <i class="flag-icon flag-icon-us"></i>
                             </div>
                             <div class="dropdown-item">
-                                <i class="flag-icon flag-icon-cn"></i>
+                                <i class="flag-icon flag-icon-it"></i>
                             </div>
                         </div>
                     </div>
@@ -304,25 +275,20 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Carousel</a></li>
-                            <li class="active">Main Slider</li>
+                            <li><a href="#">UI Elements</a></li>
+                            <li class="active">Page</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <!-- ==================== -->
-        <!-- === Main Content === -->
-        <!-- ==================== -->
         <div class="content mt-3">
 
-            <!-- LEFT -->
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
-                        <strong class="card-title">Main Slider</strong>
+                        <strong class="card-title">Main Slide</strong>
                     </div>
                     <div class="card-body">
                         <table class="table text-center" id="edit-main-slide">
@@ -348,7 +314,7 @@
                 </div>
             </div>
 
-            <!-- RIGHT -->
+
             <div class="col-md-6">
                 <div class="row">
                     <div class="warper" id='ttt'>
@@ -376,7 +342,7 @@
     <script src="../../static/admin/assets/js/plugins.js"></script>
     <script src="../../static/admin/assets/js/main.js"></script>
 
-    <script src="../../static/libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="../../plugin/owlcarousel2/owl.carousel.min.js"></script>
 
 
 
@@ -389,9 +355,6 @@
     <script src="../../static/admin/assets/js/lib/vector-map/country/jquery.vmap.world.js"></script> -->
     <script>
         (function ($) {
-            // hide slide before loaded.
-            $('.content.mt-3').css('display', 'none');
-
             $.ajax({
                 url: "/42c-dev/mainslide.php",
                 success: function (result) {
@@ -405,15 +368,12 @@
                 }
             });
 
-            var arrImage = [];
-
             function owlInit() {
                 $('.owl-carousel').owlCarousel({
                     loop: true,
                     autoplay: true,
                     margin: 10,
                     nav: true,
-                    dots: true,
                     smartSpeed: 1000,
                     responsive: {
                         0: {
@@ -425,55 +385,76 @@
                         1000: {
                             items: 1
                         }
-                    },
-                    animateIn: 'fadeIn',
-                    animateOut: 'fadeOut',
+                    }
                 });
             }
-
-
-
+            var arrImage = [];
             function deleteImage() {
                 $('#edit-main-slide tr').on('click', function (e) {
                     // console.log($(e.target))
                     var arr = [];
+                    var arrImage_remove = [];
                     var image_id = e.target.id;
                     var idx = $(this).index();
-                    // console.log('index: ' + idx);
+                    console.log('indexTR: '+idx);
 
                     if ($(e.target).hasClass('btn-delete')) {
-                        var textTH = 'ยืนยันลบรูป',
-                            textEN = 'Delete Image?'
-                        if (confirm(textTH)) {
+                        if (confirm(''))
+                        // remove list image. 
+                        $(`#tr${image_id}`).remove();
+                        console.log(`imageId: ${image_id}`);
 
-                            // !! Remove list image (ID image ). 
-                            $(`#tr${image_id}`).remove();
-                            // console.log(`imageId: ${image_id}`);
-
-                            // !! Remove owl item (Index array).
-                            $('.owl-carousel').trigger('refresh.owl.carousel');
-                            $(".owl-carousel").trigger('remove.owl.carousel', [idx]).trigger('refresh.owl.carousel');
-                        }
+                        // // remove owl item.
+                        $('.owl-carousel').trigger('refresh.owl.carousel');
+                        $(".owl-carousel").trigger('remove.owl.carousel', [idx]).trigger('refresh.owl.carousel');
                     }
-                    // !! Push 'img' to array list.
+                    // puch img to array list.
                     $("#edit-main-slide tr img").each(function () {
                         var url = $(this).attr('src');
                         arr.push(url);
                     });
                     console.log(arr);
-                    
-                    // =====
-                    // !! Reset image order count.
-                    let imageRow = $('#edit-main-slide tbody td:first-child');
-
-                    for (let i = 0; i < imageRow.length; i++) {
-                    
-                        imageRow[i].innerHTML = ( i+1 );
-                    
-                    }
                 })
             }
+            // $('#edit-main-slide').click( function (e) {
+            //     // console.log(this); // show element selected
+            //     // console.log($(e)); // show event attribute
+            //     // console.log(e.target);
+            //     // console.log($(this));
+            //     // console.log($(this).children().index());
+            //     // console.log($(this).children());
 
+            //     var arr = [];
+            //     var arrImage_remove = [];
+            //     // var image_id = e.target.id;
+
+            //     // if ($(e.target).hasClass('btn-delete')) {
+            //     //     var se = $(e.target);
+            //     //     console.log($('#edit-main-slide tr').index());
+
+            //     //     // arrImage.forEach(function (value, i) {
+            //     //     //     console.log('%d: %s', i, value);
+            //     //     //     // console.log(arrImage.indexOf(this))
+            //     //     //     console.log(e.target);
+            //     //     // });
+
+            //     //     // remove list image. 
+            //     //     // $(`#tr${image_id}`).remove();
+            //     //     // console.log(`imageId: ${image_id - 1}`);
+            //     //     // console.log(`imageId not -1: ${image_id}`);
+
+            //     //     // // remove owl item.
+            //     //     // $('.owl-carousel').trigger('refresh.owl.carousel');
+            //     //     // $(".owl-carousel").trigger('remove.owl.carousel', [image_id - 1]).trigger('refresh.owl.carousel');
+            //     // }
+            //     // puch img to array list.
+            //     $("#edit-main-slide tr img").each(function () {
+            //         var url = $(this).attr('src');
+            //         arr.push(url);
+            //     });
+            //     console.log(arr);
+
+            // });
 
 
             function buildpreview(list) {
@@ -512,10 +493,6 @@
                     tbody.append(tr)
                 })
                 console.log(arrImage);
-                
-                // show slide after jquery loaded.
-                $('.content.mt-3').fadeIn(500);
-
             } // end buildpreview
         })(jQuery);
     </script>

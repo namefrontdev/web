@@ -108,12 +108,19 @@ $(function(){
         }
     });
 
-    //#3
+    //#3 light box
     $(".js-smartPhoto").SmartPhoto();
 
-    //#4
+    //#4 scroll smooth
     $('a').smoothScroll({
         speed: 1000
+    });
+
+    //#5 Aos
+    AOS.init({
+        offset: 500, // offset (in px) from the original trigger point
+        easing: 'ease-in-out',
+        once: true, // whether animation should happen only once - while scrolling down
     });
 
 

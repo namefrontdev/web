@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./static/libs/smartphoto/css/smartphoto.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="./static/admin/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/libs/aos/aos.css">
 </head>
 
 <body>
@@ -109,7 +110,7 @@
     <div class="container-fluid bg-light">
         <!-- preview 42C Hotel -->
         <div id="preview-42C">
-            <article id="hl-1" class="highlight type-1">
+            <article id="hl-1" class="highlight">
                 <div id="overview_room_img" class="hl-image" style="background-image: url(img/PI4_5140.jpg);">
                     <img src="img/PI4_5140.jpg" class="img-fluid">
                 </div>
@@ -175,7 +176,7 @@
                 <h4>Room 42C The Chic Hotel</h4>
             </header>
 
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-12 col-lg-6" >
                 <div class="room" role="deluxe">
                     <a class="room-link" href="javscript:void(0);">
                         <div class="thumbnail">
@@ -502,7 +503,9 @@
     </div>
     <!-- google map -->
 
-
+    <nav id="goTop" style="display:none">
+        <a href="#slider-area" class="btn btn-primary ">top</a>
+    </nav>
     <!-- !!! FOOTER !!! -->
     <div class="container-fluid primary-42C-bg-color extended-2">
         <div class="footer">
@@ -526,8 +529,8 @@
                         <h6>SERVICES</h6>
                         <ul class="list-group list-group-flush">
                             <a class="list-group-item" href="#room">Room</a>
-                            <a class="list-group-item" href="conference">Conference Room</a>
-                            <a class="list-group-item" href="restaurant">Restaurant</a>
+                            <a class="list-group-item" href="#conference">Conference Room</a>
+                            <a class="list-group-item" href="#restaurant">Restaurant</a>
                             <a class="list-group-item">Hotel</a>
                         </ul>
                     </div>
@@ -557,5 +560,6 @@
 <script src="./static/libs/smartphoto/js/jquery-smartphoto.min.js"></script>
 <script src="./static/libs/jquery.smooth-scroll.js"></script>
 <script src="./static/js/index.js"></script>
+<script src="./static/libs/aos/aos.js"></script>
 
 </html>

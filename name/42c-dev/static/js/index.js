@@ -1,7 +1,13 @@
-// !! Scroll window / navbar animation !!
-var documentElm = $(document);
-var navbar = $('#header_main nav');
+// =========================================
+// Scroll window
+// =========================================
+
+let documentElm = $(document);
 var lastScrollTop = 0;
+
+
+var navbar = $('#header_main').find('nav'); /* navbar animation */
+var goTopBtn = $("#goTop"); /* goTop button */
 
 documentElm.on('scroll', function() {
 
@@ -18,16 +24,39 @@ documentElm.on('scroll', function() {
             lastScrollTop = currentScrollTop;
 
         }
-})
+
+        if (currentScrollTop > 200 ) {
+            goTopBtn.fadeIn();
+        }
+        else {
+            goTopBtn.fadeOut();
+            lastScrollTop = currentScrollTop;
+        }
+});
 
 
-// $('img').each(function () {
-//     if (this.src.length > 0) {
-//         $(this).after('<div class="img-overlay"/>');
-//     }
-// });
+// AOS animate
+var anim = 'data-aos',
+    fadeUp = 'fade-up',
+    fadeRight = 'fade-right',
+    fadeDown = 'fade-down',
+    fadeLeft = 'fade-left';
 
-var allImg = documentElm.find('#room img,#conference img,#restaurant img');
+var highlightNormals = documentElm.find('.highlight').find('.hl-image'),
+    highlightReverse = documentElm.find('.highlight').filter('.rev').find('.hl-image'),
+    room = documentElm.find('.room');
+
+highlightNormals.attr( anim, fadeLeft );
+highlightReverse.attr( anim, fadeRight );
+room.attr( anim, fadeUp);
+
+
+
+
+// ========================================
+// Add overlay to image.
+// ========================================
+var allImg = documentElm.find('#room img, #conference img, #restaurant img');
 console.log(allImg)
 allImg.after(
     '<div class="img-overlay">'+
